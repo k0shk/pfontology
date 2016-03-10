@@ -1,0 +1,1113 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/pfontology/"
+     xml:base="http://www.semanticweb.org/pfontology/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pfontology/">
+        <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP10_starts_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP10_starts_on">
+        <rdfs:label xml:lang="en">PFP10 starts on</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC31_Time_Span"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP11_is_purposed_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP11_is_purposed_for">
+        <rdfs:label xml:lang="en">PFP11 is purposed for</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC14_Financial_Classification_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC21_Financial_Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP12_recepient_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP12_recepient_of">
+        <rdfs:label xml:lang="en">PFP12 recepient of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC24_Transaction_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP13_isIssued_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP13_isIssued_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP13_isIssued_to">
+        <rdfs:label xml:lang="en">PFP13 is issued to</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC24_Transaction_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP14_identifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP14_identifies">
+        <rdfs:label xml:lang="en">PFP14 identifies</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC11_Appelation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP15_isIdentified_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP15_isIdentified_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP15_isIdentified_by">
+        <rdfs:label xml:lang="en">PFP15 is identified by</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC18_Identifier"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP16_is_multiplier_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP16_is_multiplier_for">
+        <rdfs:label xml:lang="en">PFP16 is multiplier for</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC10_Amount_Dimension"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC13_Financial_Amount"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP17_is_expressed_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP17_is_expressed_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP17_is_expressed_in">
+        <rdfs:label xml:lang="en">PFP17 is expressed in</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC10_Amount_Dimension"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC13_Financial_Amount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP18_received -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP18_received">
+        <rdfs:label xml:lang="en">PFP18 received</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC26_Grant_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC29_Legal_Body"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP20_is_awarded_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP19_awarded -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP19_awarded">
+        <rdfs:label xml:lang="en">PFP19 awarded</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC26_Grant_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP21_is_awarded_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP1_has_appelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP1_has_appelation">
+        <rdfs:label xml:lang="en">PFP1 has appelation</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC11_Appelation"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP20_is_awarded_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP20_is_awarded_to">
+        <rdfs:label xml:lang="en">PFP20 is awarded to</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC26_Grant_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC29_Legal_Body"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP21_is_awarded_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP21_is_awarded_by">
+        <rdfs:label xml:lang="en">PFP21 is awarded by</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC26_Grant_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP22_funded_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP22_funded_from">
+        <rdfs:label xml:lang="en">PFP22 funded from</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC15_Financial_Feature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC21_Financial_Item"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP23_is_allocated_on"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP23_is_allocated_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP23_is_allocated_on">
+        <rdfs:label xml:lang="en">PFP23 is allocated on</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC15_Financial_Feature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC21_Financial_Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP24_is_administrated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP24_is_administrated_by">
+        <rdfs:label xml:lang="en">PFP24 is administrated by</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP25_is_type_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP25_is_type_of">
+        <rdfs:label xml:lang="en">PFP25 is type of</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC1_Financial_Entity_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP26_has_type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP26_has_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP26_has_type">
+        <rdfs:label xml:lang="en">PFP26 has type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC1_Financial_Entity_Type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP27_is_supplier_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP27_is_supplier_of">
+        <rdfs:label xml:lang="en">PFP27 is supplier of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC25_Contract_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP28_has_supplier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP28_has_supplier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP28_has_supplier">
+        <rdfs:label xml:lang="en">PFP28 has supplier</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC25_Contract_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP29_is_state_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP29_is_state_of">
+        <rdfs:label xml:lang="en">PFP29 is state of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC8_Financial_State_Type"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP30_has_state"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP2_performed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP2_performed">
+        <rdfs:label xml:lang="en">PFP2 performed</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC26_Grant_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC28_Bank_Body"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP3_was_curried_out_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP30_has_state -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP30_has_state">
+        <rdfs:label xml:lang="en">PFP30 has state</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC8_Financial_State_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP31_is_stage_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP31_is_stage_of">
+        <rdfs:label xml:lang="en">PFP31 is stage of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC19_Actual"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC20_Budget"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC5_Budget_Process_Stage_Type"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP32_has_stage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP32_has_stage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP32_has_stage">
+        <rdfs:label xml:lang="en">PFP32 has stage</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC19_Actual"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC20_Budget"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC5_Budget_Process_Stage_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP33_is_period_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP33_is_period_of">
+        <rdfs:label xml:lang="en">PFP33 is period of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC17_Period"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP34_has_period"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP34_has_period -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP34_has_period">
+        <rdfs:label xml:lang="en">PFP34 has period</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC17_Period"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP35_is_financial_year_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP35_is_financial_year_of">
+        <rdfs:label xml:lang="en">PFP35 is financial year of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC21_Financial_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC30_Financial_Year"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP36_has_financial_year"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP36_has_financial_year -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP36_has_financial_year">
+        <rdfs:label xml:lang="en">PFP36 has financial year</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC21_Financial_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC30_Financial_Year"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP37_is_description_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP37_is_description_of">
+        <rdfs:label xml:lang="en">PFP37 is description of</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC12_Description"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP38_has_description"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP38_has_description -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP38_has_description">
+        <rdfs:label xml:lang="en">PFP38 has description</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC12_Description"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP39_is_customer_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP39_is_customer_of">
+        <rdfs:label xml:lang="en">PFP39 is customer of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC25_Contract_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP40_has_customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP3_was_curried_out_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP3_was_curried_out_by">
+        <rdfs:label xml:lang="en">PFP3 was curried out by</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC26_Grant_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC28_Bank_Body"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP40_has_customer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP40_has_customer">
+        <rdfs:label xml:lang="en">PFP40 has customer</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC25_Contract_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP41_is_currency_unit_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP41_is_currency_unit_of">
+        <rdfs:label xml:lang="en">PFP41 is currency unit of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC13_Financial_Amount"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC9_World_Currency_Unit"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP42_has_currency_unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP42_has_currency_unit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP42_has_currency_unit">
+        <rdfs:label xml:lang="en">PFP42 has currency unit</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC13_Financial_Amount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC9_World_Currency_Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP43_is_amount_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP43_is_amount_of">
+        <rdfs:label xml:lang="en">PFP43 is amount of</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC13_Financial_Amount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP44_has_amount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP44_has_amount -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP44_has_amount">
+        <rdfs:label xml:lang="en">PFP44 has amount</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC13_Financial_Amount"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP45_is_end_date_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP45_is_end_date_of">
+        <rdfs:label xml:lang="en">PFP45 is end date of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC31_Time_Span"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP46_ends_on"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP46_ends_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP46_ends_on">
+        <rdfs:label xml:lang="en">PFP46 ends on</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC31_Time_Span"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP47_is_constituent_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP47_is_constituent_of">
+        <rdfs:label xml:lang="en">PFP47 is constituent of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP50_has_constituent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP48_is_scoped_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP48_is_scoped_of">
+        <rdfs:label xml:lang="en">PFP48 is scoped of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC20_Budget"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC4_Budget_Level_Type"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP49_applies_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP49_applies_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP49_applies_to">
+        <rdfs:label xml:lang="en">PFP49 applies to</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC20_Budget"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC4_Budget_Level_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP4_is_administrator_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP4_is_administrator_of">
+        <rdfs:label xml:lang="en">PFP4 is administrator of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP24_is_administrated_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP50_has_constituent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP50_has_constituent">
+        <rdfs:label xml:lang="en">PFP50 has constituent</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP52_is_assigned_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP52_is_assigned_on">
+        <rdfs:label xml:lang="en">PFP52 is assigned on</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC14_Financial_Classification_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC21_Financial_Item"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP11_is_purposed_for"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP5_is_transaction_date_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP5_is_transaction_date_of">
+        <rdfs:label xml:lang="en">PFP5 is transaction date of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC24_Transaction_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC31_Time_Span"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP6_was_transferred"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP6_was_transferred -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP6_was_transferred">
+        <rdfs:label xml:lang="en">PFP6 was transferred</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC24_Transaction_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC31_Time_Span"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP7_is_assigned_date_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP7_is_assigned_date_of">
+        <rdfs:label xml:lang="en">PFP7 is assigned date of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC31_Time_Span"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP8_was_assigned_on"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP8_was_assigned_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP8_was_assigned_on">
+        <rdfs:label xml:lang="en">PFP8 was assigned on</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC31_Time_Span"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP9_is_start_date_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pfontology/PFP9_is_start_date_of">
+        <rdfs:label xml:lang="en">PFP9 is start date of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC31_Time_Span"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pfontology/PFP10_starts_on"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFP51_has_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pfontology/PFP51_has_value">
+        <rdfs:label xml:lang="en">PFP51 has value</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pfontology/PFC13_Financial_Amount"/>
+        <rdfs:range rdf:resource="&owl;real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC10_Amount_Dimension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC10_Amount_Dimension">
+        <rdfs:label xml:lang="en">PFC10 Amount Dimension</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC11_Appelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC11_Appelation">
+        <rdfs:label xml:lang="en">PFC11 Appelation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC12_Description -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC12_Description">
+        <rdfs:label xml:lang="en">PFC12 Description</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC13_Financial_Amount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC13_Financial_Amount">
+        <rdfs:label xml:lang="en">PFC13 Financial Amount</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC14_Financial_Classification_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC14_Financial_Classification_Item">
+        <rdfs:label xml:lang="en">PFC14 Financial Classification Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC15_Financial_Feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC15_Financial_Feature">
+        <rdfs:label xml:lang="en">PFC15 Financial Feature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC16_Financial_Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC16_Financial_Object">
+        <rdfs:label xml:lang="en">PFC16 Financial Object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC17_Period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC17_Period">
+        <rdfs:label xml:lang="en">PFC17 Period</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC18_Identifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC18_Identifier">
+        <rdfs:label xml:lang="en">PFC18 Identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC11_Appelation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC19_Actual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC19_Actual">
+        <rdfs:label xml:lang="en">PFC19 Actual</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC1_Financial_Entity_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC1_Financial_Entity_Type">
+        <rdfs:label xml:lang="en">PFC1 Financial Entity Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC20_Budget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC20_Budget">
+        <rdfs:label xml:lang="en">PFC20 Budget</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC21_Financial_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC21_Financial_Item">
+        <rdfs:label xml:lang="en">PFC21 Financial Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC16_Financial_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC22_Expense_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC22_Expense_Item">
+        <rdfs:label xml:lang="en">PFC22 Expense Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC21_Financial_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC23_Revenue_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC23_Revenue_Item">
+        <rdfs:label xml:lang="en">PFC23 Revenue Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC21_Financial_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC24_Transaction_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC24_Transaction_Item">
+        <rdfs:label xml:lang="en">PFC24 Transaction Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC21_Financial_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC25_Contract_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC25_Contract_Item">
+        <rdfs:label xml:lang="en">PFC25 Contract Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC22_Expense_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC26_Grant_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC26_Grant_Item">
+        <rdfs:label xml:lang="en">PFC26 Grant Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC22_Expense_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC27_Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC27_Organization">
+        <rdfs:label xml:lang="en">PFC27 Organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC28_Bank_Body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC28_Bank_Body">
+        <rdfs:label xml:lang="en">PFC28 Bank Body</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC29_Legal_Body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC29_Legal_Body">
+        <rdfs:label xml:lang="en">PFC29 Legal Body</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC27_Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC2_Financial_Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC2_Financial_Entity">
+        <rdfs:label xml:lang="en">PFC2 Financial Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC30_Financial_Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC30_Financial_Year">
+        <rdfs:label xml:lang="en">PFC30 Financial Year</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC17_Period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC31_Time_Span -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC31_Time_Span">
+        <rdfs:label xml:lang="en">PFC31 Time Span</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC17_Period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC3_Amount_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC3_Amount_Type">
+        <rdfs:label xml:lang="en">PFC3 Amount Type</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pfontology/TotalIncome"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pfontology/Income"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pfontology/RequestedAmount"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pfontology/Spending"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pfontology/TotalSpending"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pfontology/Surplus"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pfontology/Deficit"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC1_Financial_Entity_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC4_Budget_Level_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC4_Budget_Level_Type">
+        <rdfs:label xml:lang="en">PFC4 Budget Level Type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC1_Financial_Entity_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC5_Budget_Process_Stage_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC5_Budget_Process_Stage_Type">
+        <rdfs:label xml:lang="en">PFC5 Budget Process Stage Type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC1_Financial_Entity_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC6_Financial_Classification_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC6_Financial_Classification_Type">
+        <rdfs:label xml:lang="en">PFC6 Financial Classification Type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC1_Financial_Entity_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC8_Financial_State_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC8_Financial_State_Type">
+        <rdfs:label xml:lang="en">PFC7 Financial State Type</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pfontology/Plan"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pfontology/Outturn"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC1_Financial_Entity_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC8_Financial_Year_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC8_Financial_Year_Type">
+        <rdfs:label xml:lang="en">PFC8 Financial Year Type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC1_Financial_Entity_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/PFC9_World_Currency_Unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pfontology/PFC9_World_Currency_Unit">
+        <rdfs:label xml:lang="en">PFC9 World Currency Unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pfontology/PFC1_Financial_Entity_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Administrative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Administrative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC6_Financial_Classification_Type"/>
+        <rdfs:label xml:lang="en">Administrative</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Approving -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Approving">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC5_Budget_Process_Stage_Type"/>
+        <rdfs:label xml:lang="en">Approving</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Deficit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Deficit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Deficit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Draft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Draft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC5_Budget_Process_Stage_Type"/>
+        <rdfs:label xml:lang="en">Draft</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Economic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Economic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC6_Financial_Classification_Type"/>
+        <rdfs:label xml:lang="en">Economic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Evaluating -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Evaluating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC5_Budget_Process_Stage_Type"/>
+        <rdfs:label xml:lang="en">Evaluating</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Executing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Executing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC5_Budget_Process_Stage_Type"/>
+        <rdfs:label xml:lang="en">Executing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Functional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Functional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC6_Financial_Classification_Type"/>
+        <rdfs:label xml:lang="en">Functional</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/GBP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/GBP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC9_World_Currency_Unit"/>
+        <rdfs:label xml:lang="en">GBP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Income -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Income">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Income</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Local -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Local">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC4_Budget_Level_Type"/>
+        <rdfs:label xml:lang="en">Local</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/National -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/National">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC4_Budget_Level_Type"/>
+        <rdfs:label xml:lang="en">National</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Outturn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Outturn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC8_Financial_State_Type"/>
+        <rdfs:label xml:lang="en">Outturn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Plan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Plan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC8_Financial_State_Type"/>
+        <rdfs:label xml:lang="en">Plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Programmatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Programmatic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC6_Financial_Classification_Type"/>
+        <rdfs:label xml:lang="en">Programmatic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/RequestedAmount -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/RequestedAmount">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Requested amount</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/RussianFinancialYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/RussianFinancialYear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC8_Financial_Year_Type"/>
+        <rdfs:label xml:lang="en">Russian Financial Year</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Spending -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Spending">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Spending</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/Surplus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/Surplus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Surplus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/TotalIncome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/TotalIncome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Total income</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/TotalSpending -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/TotalSpending">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Total spending</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pfontology/UKFinancialYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pfontology/UKFinancialYear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pfontology/PFC8_Financial_Year_Type"/>
+        <rdfs:label xml:lang="en">UK financial year</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

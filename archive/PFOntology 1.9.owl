@@ -1,0 +1,1143 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.kmi.open.ac.uk/PFontology/entity/"
+     xml:base="http://www.kmi.open.ac.uk/PFontology/entity/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP10_starts_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP10_starts_on">
+        <rdfs:label xml:lang="en">PFP10 starts on</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC31_Time-Span"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP11_is_purposed_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP11_is_purposed_for">
+        <rdfs:label xml:lang="en">PFP11 is purposed for</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC14_Financial_Classification_Item"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC21_Financial_Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP12_recepient_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP12_recepient_of">
+        <rdfs:label xml:lang="en">PFP12 recepient of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC24_Transaction_Item"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP13_isIssued_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP13_isIssued_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP13_isIssued_to">
+        <rdfs:label xml:lang="en">PFP13 is issued to</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC24_Transaction_Item"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP14_identifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP14_identifies">
+        <rdfs:label xml:lang="en">PFP14 identifies</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC11_Appellation"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP15_isIdentified_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP15_isIdentified_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP15_isIdentified_by">
+        <rdfs:label xml:lang="en">PFP15 is identified by</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC18_Identifier"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP16_is_multiplier_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP16_is_multiplier_for">
+        <rdfs:label xml:lang="en">PFP16 is multiplier for</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC10_Amount_Dimension"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC13_Financial_Amount"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP17_is_expressed_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP17_is_expressed_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP17_is_expressed_in">
+        <rdfs:label xml:lang="en">PFP17 is expressed in</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC10_Amount_Dimension"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC13_Financial_Amount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP18_received -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP18_received">
+        <rdfs:label xml:lang="en">PFP18 received</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC26_Grant_Item"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC29_Legal_Body"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP20_is_awarded_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP19_awarded -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP19_awarded">
+        <rdfs:label xml:lang="en">PFP19 awarded</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC26_Grant_Item"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP21_is_awarded_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP1_has_appelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP1_has_appelation">
+        <rdfs:label xml:lang="en">PFP1 has appelation</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC11_Appellation"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP20_is_awarded_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP20_is_awarded_to">
+        <rdfs:label xml:lang="en">PFP20 is awarded to</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC26_Grant_Item"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC29_Legal_Body"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP21_is_awarded_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP21_is_awarded_by">
+        <rdfs:label xml:lang="en">PFP21 is awarded by</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC26_Grant_Item"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP22_funded_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP22_funded_from">
+        <rdfs:label xml:lang="en">PFP22 funded from</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC15_Financial_Feature"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC21_Financial_Item"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP23_is_allocated_on"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP23_is_allocated_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP23_is_allocated_on">
+        <rdfs:label xml:lang="en">PFP23 is allocated on</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC15_Financial_Feature"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC21_Financial_Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP24_is_administrated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP24_is_administrated_by">
+        <rdfs:label xml:lang="en">PFP24 is administrated by</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP25_is_type_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP25_is_type_of">
+        <rdfs:label xml:lang="en">PFP25 is type of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC2_Financial_Entity_Type"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP26_has_type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP26_has_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP26_has_type">
+        <rdfs:label xml:lang="en">PFP26 has type</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC2_Financial_Entity_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP27_is_supplier_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP27_is_supplier_of">
+        <rdfs:label xml:lang="en">PFP27 is supplier of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC25_Contract_Item"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP28_has_supplier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP28_has_supplier -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP28_has_supplier">
+        <rdfs:label xml:lang="en">PFP28 has supplier</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC25_Contract_Item"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP29_is_state_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP29_is_state_of">
+        <rdfs:label xml:lang="en">PFP29 is state of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC8_Financial_State_Type"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP30_has_state"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP2_performed -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP2_performed">
+        <rdfs:label xml:lang="en">PFP2 performed</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC26_Grant_Item"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC28_Bank_Body"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP3_was_curried_out_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP30_has_state -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP30_has_state">
+        <rdfs:label xml:lang="en">PFP30 has state</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC8_Financial_State_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP31_is_stage_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP31_is_stage_of">
+        <rdfs:label xml:lang="en">PFP31 is stage of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC19_Actual"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC20_Budget"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC5_Budget_Process_Stage_Type"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP32_has_stage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP32_has_stage -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP32_has_stage">
+        <rdfs:label xml:lang="en">PFP32 has stage</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC19_Actual"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC20_Budget"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC5_Budget_Process_Stage_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP33_is_period_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP33_is_period_of">
+        <rdfs:label xml:lang="en">PFP33 is period of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC17_Period"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP34_has_period"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP34_has_period -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP34_has_period">
+        <rdfs:label xml:lang="en">PFP34 has period</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC17_Period"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP35_is_financial_year_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP35_is_financial_year_of">
+        <rdfs:label xml:lang="en">PFP35 is financial year of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC21_Financial_Item"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC30_Financial_Year"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP36_has_financial_year"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP36_has_financial_year -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP36_has_financial_year">
+        <rdfs:label xml:lang="en">PFP36 has financial year</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC21_Financial_Item"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC30_Financial_Year"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP37_is_description_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP37_is_description_of">
+        <rdfs:label xml:lang="en">PFP37 is description of</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC12_Description"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP38_has_description"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP38_has_description -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP38_has_description">
+        <rdfs:label xml:lang="en">PFP38 has description</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC12_Description"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP39_is_customer_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP39_is_customer_of">
+        <rdfs:label xml:lang="en">PFP39 is customer of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC25_Contract_Item"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP40_has_customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP3_was_curried_out_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP3_was_curried_out_by">
+        <rdfs:label xml:lang="en">PFP3 was curried out by</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC26_Grant_Item"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC28_Bank_Body"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP40_has_customer -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP40_has_customer">
+        <rdfs:label xml:lang="en">PFP40 has customer</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC25_Contract_Item"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP41_is_currency_unit_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP41_is_currency_unit_of">
+        <rdfs:label xml:lang="en">PFP41 is currency unit of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC13_Financial_Amount"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC9_World_Currency_Unit"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP42_has_currency_unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP42_has_currency_unit -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP42_has_currency_unit">
+        <rdfs:label xml:lang="en">PFP42 has currency unit</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC13_Financial_Amount"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC9_World_Currency_Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP43_is_amount_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP43_is_amount_of">
+        <rdfs:label xml:lang="en">PFP43 is amount of</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC13_Financial_Amount"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP44_has_amount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP44_has_amount -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP44_has_amount">
+        <rdfs:label xml:lang="en">PFP44 has amount</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC13_Financial_Amount"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP45_is_end_date_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP45_is_end_date_of">
+        <rdfs:label xml:lang="en">PFP45 is end date of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC31_Time-Span"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP46_ends_on"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP46_ends_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP46_ends_on">
+        <rdfs:label xml:lang="en">PFP46 ends on</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC31_Time-Span"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP47_is_constituent_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP47_is_constituent_of">
+        <rdfs:label xml:lang="en">PFP47 is constituent of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP50_has_constituent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP48_is_scoped_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP48_is_scoped_of">
+        <rdfs:label xml:lang="en">PFP48 is scoped of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC20_Budget"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC4_Budget_Level_Type"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP49_applies_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP49_applies_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP49_applies_to">
+        <rdfs:label xml:lang="en">PFP49 applies to</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC20_Budget"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC4_Budget_Level_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP4_is_administrator_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP4_is_administrator_of">
+        <rdfs:label xml:lang="en">PFP4 is administrator of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP24_is_administrated_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP50_has_constituent -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP50_has_constituent">
+        <rdfs:label xml:lang="en">PFP50 has constituent</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP52_is_assigned_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP52_is_assigned_on">
+        <rdfs:label xml:lang="en">PFP52 is assigned on</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC14_Financial_Classification_Item"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC21_Financial_Item"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP11_is_purposed_for"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP5_is_transaction_date_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP5_is_transaction_date_of">
+        <rdfs:label xml:lang="en">PFP5 is transaction date of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC24_Transaction_Item"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC31_Time-Span"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP6_was_transferred"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP6_was_transferred -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP6_was_transferred">
+        <rdfs:label xml:lang="en">PFP6 was transferred</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC24_Transaction_Item"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC31_Time-Span"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP7_is_assigned_date_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP7_is_assigned_date_of">
+        <rdfs:label xml:lang="en">PFP7 is assigned date of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC31_Time-Span"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP8_was_assigned_on"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP8_was_assigned_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP8_was_assigned_on">
+        <rdfs:label xml:lang="en">PFP8 was assigned on</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC31_Time-Span"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP9_is_start_date_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP9_is_start_date_of">
+        <rdfs:label xml:lang="en">PFP9 is start date of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC31_Time-Span"/>
+        <owl:inverseOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFP10_starts_on"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFP51_has_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFP51_has_value">
+        <rdfs:label xml:lang="en">PFP51 has value</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC13_Financial_Amount"/>
+        <rdfs:range rdf:resource="&owl;real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC10_Amount_Dimension -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC10_Amount_Dimension">
+        <rdfs:label xml:lang="en">PFC10 Amount Dimension</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <rdfs:comment xml:lang="en">represents names for quantities (f.e. thousand, million) </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC11_Appellation -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC11_Appellation">
+        <rdfs:label xml:lang="en">PFC11 Appellation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <rdfs:comment xml:lang="en">defines names</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC12_Description -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC12_Description">
+        <rdfs:label xml:lang="en">PFC12 Description</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <rdfs:comment xml:lang="en">represents word, statement or comment, which described entity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC13_Financial_Amount -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC13_Financial_Amount">
+        <rdfs:label xml:lang="en">PFC13 Financial Amount</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <rdfs:comment xml:lang="en">represents quantity of money</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC14_Financial_Classification_Item -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC14_Financial_Classification_Item">
+        <rdfs:label xml:lang="en">PFC14 Financial Classification Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <rdfs:comment xml:lang="en">represents a peace of information, which is used to classify financial entities</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC15_Financial_Feature -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC15_Financial_Feature">
+        <rdfs:label xml:lang="en">PFC15 Financial Feature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <rdfs:comment xml:lang="en">represents feature or object to which the funding is aimed</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object">
+        <rdfs:label xml:lang="en">PFC16 Financial Object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <rdfs:comment xml:lang="en">represents object, concept or category, which related to the field of finance</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC17_Period -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC17_Period">
+        <rdfs:label xml:lang="en">PFC17 Period</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity"/>
+        <rdfs:comment xml:lang="en">represents a unit of measurement used to categorize a length of time</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC18_Identifier -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC18_Identifier">
+        <rdfs:label xml:lang="en">PFC18 Identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC11_Appellation"/>
+        <rdfs:comment xml:lang="en">represents a numeric or alphanumeric string that is associated with entitity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC19_Actual -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC19_Actual">
+        <rdfs:label xml:lang="en">PFC19 Actual</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:comment xml:lang="en">represents a set of actual revenues and spending for a financial period</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC1_Financial_Entity">
+        <rdfs:label xml:lang="en">PFC1 Financial Entity</rdfs:label>
+        <rdfs:comment xml:lang="en">represents the class of all financial things, or the abstract object that can be described by the criteria for being a financial thing</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC20_Budget -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC20_Budget">
+        <rdfs:label xml:lang="en">PFC20 Budget</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:comment xml:lang="en">represents a set of proposed revenues and spending for a financial period</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC21_Financial_Item -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC21_Financial_Item">
+        <rdfs:label xml:lang="en">PFC21 Financial Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC16_Financial_Object"/>
+        <rdfs:comment xml:lang="en">is a peace of financial information which must be identified by time (financial year or other period), amount, government organization and financial purpose.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC22_Expense_Item -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC22_Expense_Item">
+        <rdfs:label xml:lang="en">PFC22 Expense Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC21_Financial_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC23_Revenue_Item -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC23_Revenue_Item">
+        <rdfs:label xml:lang="en">PFC23 Revenue Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC21_Financial_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC24_Transaction_Item -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC24_Transaction_Item">
+        <rdfs:label xml:lang="en">PFC24 Transaction Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC21_Financial_Item"/>
+        <rdfs:comment xml:lang="en">is a financial item, which represent financial transaction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC25_Contract_Item -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC25_Contract_Item">
+        <rdfs:label xml:lang="en">PFC25 Contract Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC22_Expense_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC26_Grant_Item -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC26_Grant_Item">
+        <rdfs:label xml:lang="en">PFC26 Grant Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC22_Expense_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization">
+        <rdfs:label xml:lang="en">PFC27 Organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:comment xml:lang="en">subclass of organization from Organization ontology, where organization &apos;represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.&apos;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC28_Bank_Body -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC28_Bank_Body">
+        <rdfs:label xml:lang="en">PFC28 Bank Body</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+        <rdfs:comment xml:lang="en">represents a financial institution licensed as a receiver of deposits</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC29_Legal_Body -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC29_Legal_Body">
+        <rdfs:label xml:lang="en">PFC29 Legal Body</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC27_Organization"/>
+        <rdfs:comment xml:lang="en">&quot;This class comprises institutions or groups of people that have obtained a legal recognition as a group and can act collectively as agents.&quot; (CIDOC-CRM Definition)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC2_Financial_Entity_Type -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC2_Financial_Entity_Type">
+        <rdfs:label xml:lang="en">PFC2 Financial Entity Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC30_Financial_Year -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC30_Financial_Year">
+        <rdfs:label xml:lang="en">PFC30 Financial Year</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC17_Period"/>
+        <rdfs:comment xml:lang="en">represents a period used for calculating annual (&quot;yearly&quot;) financial statements in government or businesses</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC31_Time-Span -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC31_Time-Span">
+        <rdfs:label xml:lang="en">PFC31 Time-Span</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC17_Period"/>
+        <rdfs:comment xml:lang="en">&quot;comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end and a duration&quot; (CIDOC-CRM Definition)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC3_Amount_Type -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC3_Amount_Type">
+        <rdfs:label xml:lang="en">PFC3 Amount Type</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/TotalIncome"/>
+                    <rdf:Description rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/TotalSpending"/>
+                    <rdf:Description rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/RequestedAmount"/>
+                    <rdf:Description rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Surplus"/>
+                    <rdf:Description rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Income"/>
+                    <rdf:Description rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Spending"/>
+                    <rdf:Description rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Deficit"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC2_Financial_Entity_Type"/>
+        <rdfs:comment xml:lang="en">represents types for different kinds of amount</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC4_Budget_Level_Type -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC4_Budget_Level_Type">
+        <rdfs:label xml:lang="en">PFC4 Budget Level Type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC2_Financial_Entity_Type"/>
+        <rdfs:comment xml:lang="en">represents different levels of budget</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC5_Budget_Process_Stage_Type -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC5_Budget_Process_Stage_Type">
+        <rdfs:label xml:lang="en">PFC5 Budget Process Stage Type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC2_Financial_Entity_Type"/>
+        <rdfs:comment xml:lang="en">represents different stages of budgte process</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC6_Financial_Classification_Type -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC6_Financial_Classification_Type">
+        <rdfs:label xml:lang="en">PFC6 Financial Classification Type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC2_Financial_Entity_Type"/>
+        <rdfs:comment xml:lang="en">represents classifications, which commonly used in budget systems</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC8_Financial_State_Type -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC8_Financial_State_Type">
+        <rdfs:label xml:lang="en">PFC7 Financial State Type</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Outturn"/>
+                    <rdf:Description rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Plan"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC2_Financial_Entity_Type"/>
+        <rdfs:comment xml:lang="en">represent state of financial object, wchich can be only plan or outturn</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC8_Financial_Year_Type -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC8_Financial_Year_Type">
+        <rdfs:label xml:lang="en">PFC8 Financial Year Type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC2_Financial_Entity_Type"/>
+        <rdfs:comment xml:lang="en">represents different typed of financial years (wchich can be different for different countries)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/PFC9_World_Currency_Unit -->
+
+    <owl:Class rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/PFC9_World_Currency_Unit">
+        <rdfs:label xml:lang="en">PFC9 World Currency Unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC2_Financial_Entity_Type"/>
+        <rdfs:comment xml:lang="en">represents concept of monetary foreign exchange</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Administrative -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Administrative">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC6_Financial_Classification_Type"/>
+        <rdfs:label xml:lang="en">Administrative</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Approving -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Approving">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC5_Budget_Process_Stage_Type"/>
+        <rdfs:label xml:lang="en">Approving</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Deficit -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Deficit">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Deficit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Draft -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Draft">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC5_Budget_Process_Stage_Type"/>
+        <rdfs:label xml:lang="en">Draft</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Economic -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Economic">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC6_Financial_Classification_Type"/>
+        <rdfs:label xml:lang="en">Economic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Evaluating -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Evaluating">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC5_Budget_Process_Stage_Type"/>
+        <rdfs:label xml:lang="en">Evaluating</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Executing -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Executing">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC5_Budget_Process_Stage_Type"/>
+        <rdfs:label xml:lang="en">Executing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Functional -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Functional">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC6_Financial_Classification_Type"/>
+        <rdfs:label xml:lang="en">Functional</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/GBP -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/GBP">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC9_World_Currency_Unit"/>
+        <rdfs:label xml:lang="en">GBP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Income -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Income">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Income</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Local -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Local">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC4_Budget_Level_Type"/>
+        <rdfs:label xml:lang="en">Local</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/National -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/National">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC4_Budget_Level_Type"/>
+        <rdfs:label xml:lang="en">National</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Outturn -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Outturn">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC8_Financial_State_Type"/>
+        <rdfs:label xml:lang="en">Outturn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Plan -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Plan">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC8_Financial_State_Type"/>
+        <rdfs:label xml:lang="en">Plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Programmatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Programmatic">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC6_Financial_Classification_Type"/>
+        <rdfs:label xml:lang="en">Programmatic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/RequestedAmount -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/RequestedAmount">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Requested amount</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/RussianFinancialYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/RussianFinancialYear">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC8_Financial_Year_Type"/>
+        <rdfs:label xml:lang="en">Russian Financial Year</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Spending -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Spending">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Spending</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/Surplus -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/Surplus">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Surplus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/TotalIncome -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/TotalIncome">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Total income</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/TotalSpending -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/TotalSpending">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC3_Amount_Type"/>
+        <rdfs:label xml:lang="en">Total spending</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kmi.open.ac.uk/PFontology/entity/UKFinancialYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.kmi.open.ac.uk/PFontology/entity/UKFinancialYear">
+        <rdf:type rdf:resource="http://www.kmi.open.ac.uk/PFontology/entity/PFC8_Financial_Year_Type"/>
+        <rdfs:label xml:lang="en">UK financial year</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
